@@ -1,18 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Refresh" content="0;URL=https://jp.pinterest.com/pin/1035898351801588035/">  <!-- ここにリダイレクト先のURLを入れる（例: https://example.com） -->
-    <meta name="twitter:card" content="summary_large_image">  <!-- 大きな画像付きカード -->
-    <meta name="twitter:site" content="@k97xt">  <!-- あなたのTwitter/Xアカウント（任意） -->
-    <meta property="og:url" content="https://jp.pinterest.com/pin/1035898351801588035/">  <!-- リダイレクト先と同じURLを入れる -->
-    <meta property="og:title" content="おすすめサイト">  <!-- 共有時に表示されるタイトル（例: "おすすめのサイト"） -->
-    <meta property="og:description" content="詳細はこちらをチェック！">  <!-- 共有時の説明文（例: "詳細はこちらをチェック！"） -->
-    <meta property="og:image" content="https://i.pinimg.com/1200x/60/a0/5f/60a05f2210f651dc2598991bf8d754c8.jpg">  <!-- 共有時に表示される画像のURL（例: https://example.com/image.jpg）。画像は公開されているものを使い、サイズは1200x630px以上が推奨 -->
-    <title>おすすめのサイトにジャンプします</title>  <!-- ブラウザのタブに表示されるタイトル（任意） -->
+    <title>サンプルPlayer Card</title>
+
+    <!-- Player Cardの基礎設定 -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@your_twitter_account">   <!-- あなたのTwitterアカウント（任意） -->
+
+    <!-- サムネイル画像（動画のプレビューに表示。横長1,200x630px推奨） -->
+    <meta name="twitter:image" content="https://pbs.twimg.com/amplify_video_thumb/1932744018473201665/img/RLjG18P_PQPI3vCL.jpg">
+
+    <!-- 動画タイトルや説明 -->
+    <meta name="twitter:title" content="Player Cardデモ動画">
+    <meta name="twitter:description" content="ツイート上で動画が再生できるPlayer Cardのサンプルです。">
+
+    <!-- player用iframeのURLとサイズ -->
+    <meta name="twitter:player" content="https://www.example.com/player.html">        <!-- 動画iframeを表示するURL -->
+    <meta name="twitter:player:width" content="480">
+    <meta name="twitter:player:height" content="270">
+
+    <!-- MP4動画の直リンク（必須ではないが、指定推奨） -->
+    <meta name="twitter:player:stream" content="https://video.twimg.com/amplify_video/1932744018473201665/vid/avc1/1080x1080/GJ7NE_eaa0klJUPL.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4">
 </head>
 <body>
-    <p>リダイレクト中...</p>  <!-- 任意で表示 -->
+    <h1>Player Card Demo</h1>
+    <p>このページはTwitter Player Card用のサンプルです。</p>
 </body>
 </html>
