@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <!-- 自動リダイレクト不要の場合はmeta refreshなし -->
-    <!-- Player Cardで即再生設定（サムネはXが自動生成だが何も指定しない） -->
-    <meta name="twitter:card" content="player">
-    <meta name="twitter:player" content="https://video.twimg.com/ext_tw_video/1860986947990441984/pu/vid/avc1/720x1280/VrzHTXCyFMShW2i6.mp4?tag=14">
-    <meta name="twitter:player:width" content="640">
-    <meta name="twitter:player:height" content="360">
-    <meta name="twitter:title" content="動画タイトル">
-    <meta name="twitter:description" content="動画説明">
-    <!-- og:videoで直接動画を指定 -->
-    <meta property="og:video" content="https://video.twimg.com/ext_tw_video/1860986947990441984/pu/vid/avc1/720x1280/VrzHTXCyFMShW2i6.mp4?tag=14">
-    <meta property="og:video:type" content="video/mp4">
-    <meta property="og:video:width" content="640">
-    <meta property="og:video:height" content="360">
-    <!-- og:imageは不要。空でもOK -->
-    <title>自動再生動画ページ</title>
-</head>
-<body>
-    <!-- html5 videoタグで自動再生（プレイヤー外部ページ用） -->
-    <video src="https://your-video-site.com/movie.mp4" width="640" height="360" controls autoplay muted playsinline></video>
-</body>
-</html>
+<meta name="twitter:card" content="player">
+<meta name="twitter:player" content="https://your-site.com/player.html">
+<meta name="twitter:player:width" content="640">
+<meta name="twitter:player:height" content="360">
+<meta name="twitter:title" content="動画タイトル">
+<meta name="twitter:description" content="動画説明">
+<meta property="og:video" content="https://video.twimg.com/ext_tw_video/1860986947990441984/pu/vid/avc1/720x1280/VrzHTXCyFMShW2i6.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="640">
+<meta property="og:video:height" content="360">
