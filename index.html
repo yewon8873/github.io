@@ -2,31 +2,24 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Refresh" content="0;URL=https://your-video-site.com/moviepage">
-    <!-- Twitter動画プレビュー設定 -->
+    <!-- 自動リダイレクト不要の場合はmeta refreshなし -->
+    <!-- Player Cardで即再生設定（サムネはXが自動生成だが何も指定しない） -->
     <meta name="twitter:card" content="player">
-    <meta name="twitter:site" content="@YourTwitterID">
-    <meta name="twitter:player" content="https://video.twimg.com/amplify_video/1973663111782502400/vid/avc1/720x1280/1XUNfGmgCyQAAaEE.mp4"> <!-- 動画ページや埋め込みURL -->
+    <meta name="twitter:player" content="https://video.twimg.com/ext_tw_video/1860986947990441984/pu/vid/avc1/720x1280/VrzHTXCyFMShW2i6.mp4?tag=14">
     <meta name="twitter:player:width" content="640">
     <meta name="twitter:player:height" content="360">
-    <meta name="twitter:title" content="動画タイトルや説明">
-    <meta name="twitter:image" content="https://i.pinimg.com/1200x/43/08/37/43083712a0951b6da5aac48d04992c50.jpg"> <!-- サムネイル画像 -->
-    <meta name="twitter:description" content="18+やサイト情報などの文言">
-    <!-- Open Graph動画タグ -->
-    <meta property="og:video" content="https://video.twimg.com/amplify_video/1973663111782502400/vid/avc1/720x1280/1XUNfGmgCyQAAaEE.mp4">
+    <meta name="twitter:title" content="動画タイトル">
+    <meta name="twitter:description" content="動画説明">
+    <!-- og:videoで直接動画を指定 -->
+    <meta property="og:video" content="https://video.twimg.com/ext_tw_video/1860986947990441984/pu/vid/avc1/720x1280/VrzHTXCyFMShW2i6.mp4?tag=14">
     <meta property="og:video:type" content="video/mp4">
     <meta property="og:video:width" content="640">
     <meta property="og:video:height" content="360">
-    <meta property="og:image" content="https://i.pinimg.com/1200x/43/08/37/43083712a0951b6da5aac48d04992c50.jpg">
-    <meta property="og:title" content="動画タイトルや説明">
-    <meta property="og:description" content="18+やサイト情報などの文言">
-    <title>おすすめの動画ページへジャンプ</title>
+    <!-- og:imageは不要。空でもOK -->
+    <title>自動再生動画ページ</title>
 </head>
 <body>
-    <p>リダイレクト中...</p>
-    <!-- ※動画サムネやiFrame埋め込みのサンプル（実装時はカスタム）
-    <iframe src="https://your-video-site.com/embed-player.html" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-    -->
+    <!-- html5 videoタグで自動再生（プレイヤー外部ページ用） -->
+    <video src="https://your-video-site.com/movie.mp4" width="640" height="360" controls autoplay muted playsinline></video>
 </body>
 </html>
-
