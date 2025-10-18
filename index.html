@@ -2,20 +2,42 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私のプロモーション</title>
+    <meta http-equiv="refresh" content="0; url=https://note.com/fujin_metaverse/n/nc11d0a6cfea1" disabled> <!-- 無効化 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@YourTwitterID"> <!-- あなたのTwitter IDに変更 -->
+    <meta property="og:url" content="https://www.twivideo.jp"> <!-- GitHub Pages URLに変更 -->
+    <meta property="og:title" content="動画はここから">
+    <meta property="og:description" content="クリックまたは再生終了で続きへ！">
+    <meta property="og:image" content="https://i.imgur.com/placeholder.jpg"> <!-- プレースホルダー画像 -->
+    <meta property="og:video" content="https://yourusername.github.io/your-video.mp4"> <!-- ローカル動画に変更推奨 -->
+    <meta property="og:video:secure_url" content="https://yourusername.github.io/your-video.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <title>動画でジャンプします</title>
     <style>
-        body { text-align: center; padding: 50px; font-family: Arial, sans-serif; }
-        video { max-width: 100%; cursor: pointer; }
+        body { text-align: center; padding: 50px; font-family: Arial, sans-serif; background-color: #f0f0f0; }
+        video { max-width: 100%; cursor: pointer; border: 2px solid #333; }
+        h1 { color: #333; }
     </style>
 </head>
 <body>
-    <h1>動画をクリックして続きをチェック！</h1>
+    <h1>動画をクリックまたは再生して続きへ！</h1>
     <video controls onclick="window.location.href='https://note.com/fujin_metaverse/n/nc11d0a6cfea1';">
-        <source src="https://video.twimg.com/ext_tw_video/1826372230961364992/pu/vid/avc1/576x1024/oukcXIxfdVzBILVj.mp4" type="video/mp4">
-        あなたのブラウザは動画をサポートしていません。
+        <source src="https://video.twimg.com/ext_tw_video/1826372230961364992/pu/vid/avc1/576x1024/oukcXIxfdVzBILVj.mp4?tag=12" type="video/mp4">
+        あなたのブラウザは動画をサポートしていません。ローカル動画を使用してください。
     </video>
-    <p>クリックでリダイレクトします...</p>
+    <p>クリックまたは動画終了で <a href="https://note.com/fujin_metaverse/n/nc11d0a6cfea1">こちら</a> に移動します。</p>
+
+    <script>
+        // 動画終了時にリダイレクト
+        const video = document.querySelector('video');
+        video.addEventListener('ended', function() {
+            window.location.href = 'https://note.com/fujin_metaverse/n/nc11d0a6cfea1';
+        });
+
+        // 読み込みエラー時の警告（twimg.com使用時の対応）
+        video.addEventListener('error', function() {
+            alert('動画の読み込みに失敗しました。ローカル動画を使用してください。');
+        });
+    </script>
 </body>
 </html>
-
